@@ -25,7 +25,7 @@ $color6=$color6[$hot];
 <style>
 #cabecera{
 	margin-top: -1.5em;
-
+//
 	background: url(<?php echo $fondo[$hot]; ?>)  no-repeat center center fixed !important;
 	-webkit-background-size: cover !important;
 	-moz-background-size: cover !important;
