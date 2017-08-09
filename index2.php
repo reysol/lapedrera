@@ -33,12 +33,11 @@ $rutaFoundation='foundation/';
 <link rel="stylesheet" href="<?php echo $rutaFoundation;?>css/foundation.min.css">
 <link rel="stylesheet" href="css/general_foundicons.css">
 <link rel="stylesheet" href="css/social_foundicons.css">
-<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/app.css">
 
 <link rel="stylesheet" href="estilos1.css">
 
-<link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 <link rel="stylesheet" href="menu.css">
 <link rel="stylesheet" href="css1.css">
 </head>
@@ -66,12 +65,6 @@ $(function() {
 	padding: 5px;
 }
 </style>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js">
-</script>
-<script src="<?php echo $rutaFoundation;?>js/foundation.min.js"></script>
-<script>
-      $(document).foundation();
-</script>
 <header class="sticky-shrinknav-header">
   <ul class="dropdown menu" data-dropdown-menu>
   <li>
@@ -86,7 +79,7 @@ $(function() {
 	  <li><a href="#slide">Galer&iacute;a</a></li>
 	  <li><a href="#ubicacion">Ubicaci&oacute;n</a></li>
 	  <li><a href="#consulta">Consulta</a></li>
-	  <li><a href=""https://www.facebook.com/"><i class="fa fa-facebook text-danger"></i></a></li>
+	  <li><a href=""https://www.facebook.com/""><i class="socialicon-facebook"></i></a></li>
     </ul>
   </li>
  </ul>
@@ -114,16 +107,16 @@ $(function() {
 
 
 <div class="row">
-<div class="small-12 columns fblanco tazul">
-<div class="row">
-	<div class="small-12 columns">
+<div class="small-12 columns <?php echo $blancof; ?> <?php echo $azult; ?>">
+	<div class="row">
+	<div class="small-9  small-centered columns">
 <!--<br class="margensup"/><br class="margensup"/>-->
 		<div class="row">
-			<div class="small-12 columns"><h1 class="text-center tbordo"><strong>LA PEDRERA</strong></h1></div>
+			<div class="small-6 columns large-centered"><h1 class="text-center tbordo"><strong>LA PEDRERA</strong></h1></div>
 		</div>
-		<div class="row">
-			<div class="small-12 columns large-centered"><img src="img/ornamentoTitulos-01.png" class="float-center" style="margin-top:-30px"></div>
-		</div>
+		<div class="row"">
+			<div class="small-6 columns large-centered" style="top:-100px"><img src="img/ornamentoTitulos-01.png" class="float-center" style="margin-top:-30px"></div>
+	</div>
 	</div>
 </div>
 <br />
@@ -143,7 +136,7 @@ $(function() {
 </div>
 
 </div>
-</div>
+
 <!-- SERVICIOS -->
 <a name="servicios"></a>
 <div class="fondo fbeige">
@@ -152,54 +145,39 @@ $(function() {
 <!-- CUERPO -->
 
 <div class="row">
-	<div class="small-12 columns">
-<!--<br class="margensup"/><br class="margensup"/>-->
-		<div class="row">
-			<div class="small-12 columns"><h1 class="text-center tbordo"><strong>SERVICIOS</strong></h1></div>
-		</div>
-		<div class="row">
-			<div class="small-12 columns large-centered"><img src="img/ornamentoTitulos-01.png" class="float-center" style="margin-top:-30px"></div>
-		</div>
+	<div class="medium-12 small-6 columns fbeige">
+		<h1 class="centrar tbordo"><strong>SERVICIOS</strong></h1>
 	</div>
 </div>
 <br />
 <!-- servicios en tabla -->
-<?php
+
+	
+
+				<?php
 					for ($i=0; $i < count($servicios); $i+=4){
-						echo '<div class="row fbeige">';
+						echo '<div class="row">';
 						for ($j=0; $j<4; $j++){
 							if (isset($servicios[$i+$j])) {
 								echo '
-<div class="medium-3 small-6 columns tblanco fbeige">
-	<div class="row">
-		<div class="small-4 columns">
-			<br /><i class="fa '.$servicios[$i+$j][2].' fa-2x fa-fw"></i>
-		</div>
-		<div class="small-8 columns tazul"><br /><strong>
-			'.$servicios[$i+$j][0].'</strong><br /><small>'.$servicios[$i+$j][1].'</small>
-		</div>
-	</div>
-</div>';
-							}
-							else{
-								echo '
-<div class="medium-3 small-6 columns tblanco fbeige">
-	<div class="row">
-		<div class="small-4 columns"><br />
-			<br />
-		</div>
-		<div class="small-8 columns">
-			<br /><small></small>
-		</div>
-	</div>
-</div>';
+								<div class="small-1 columns tblanco">
+									<br /><i class="fa '.$servicios[$i+$j][2].' fa-3x"></i>
+								</div>
+								<div class="small-2 columns tazul">
+									<div class="row">
+										<div class="small-12 columns">
+											<br />'.$servicios[$i+$j][0].'
+										</div>
+										<div class="small-12 columns">
+											<small>'.$servicios[$i+$j][1].'</small>
+										</div>
+									</div>
+								</div>';
 							}
 						}
 						echo '</div>';
 					}
 				?>
-	
-
 </div>
 </div>
 
@@ -214,17 +192,12 @@ $(function() {
 <div class="row fblanco">
 <div class="large-12 columns">
 
+<!--
 <div class="row">
-	<div class="small-12 columns">
-<!--<br class="margensup"/><br class="margensup"/>-->
-		<div class="row">
-			<div class="small-12 columns"><h1 class="text-center tbordo"><strong>GALER&Iacute;A DE FOTOS</strong></h1></div>
-		</div>
-		<div class="row">
-			<div class="small-12 columns large-centered"><img src="img/ornamentoTitulos-01.png" class="float-center" style="margin-top:-30px"></div>
-		</div>
-	</div>
-</div>
+<div class="large-12 columns" >
+-->
+	<!--<br class="margensup"/><br class="margensup"/>-->
+	<h1 class="centrar">GALERÍA DE FOTOS</h1>
 	<div>
 	<?php
 		
@@ -255,17 +228,8 @@ $(function() {
 
 <div class="row fbeige">
 <div class="large-12 columns centrar">
-<div class="row">
-	<div class="small-12 columns">
 <!--<br class="margensup"/><br class="margensup"/>-->
-		<div class="row">
-			<div class="small-12 columns"><h1 class="text-center tbordo"><strong>UBICACI&Oacute;N</strong></h1></div>
-		</div>
-		<div class="row">
-			<div class="small-12 columns large-centered"><img src="img/ornamentoTitulos-01.png" class="float-center" style="margin-top:-30px"></div>
-		</div>
-	</div>
-</div>
+<h1>UBICACI&Oacute;N</h1> </br>
 <div class="flex-video widescreen">
 <iframe src="<?php echo $mapa;?>" width="1000" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
@@ -286,17 +250,7 @@ $(function() {
 <div class="row fblanco">
 <div class="small-12 medium-9 columns small-centered centrar">
 <!--<br class="margensup"/><br class="margensup"/>-->
-<div class="row">
-	<div class="small-12 columns">
-<!--<br class="margensup"/><br class="margensup"/>-->
-		<div class="row">
-			<div class="small-12 columns"><h1 class="text-center tbordo"><strong>CONSULTA</strong></h1></div>
-		</div>
-		<div class="row">
-			<div class="small-12 columns large-centered"><img src="img/ornamentoTitulos-01.png" class="float-center" style="margin-top:-30px"></div>
-		</div>
-	</div>
-</div><h5>Ante cualquier inquietud, complete el formulario de consulta, o<br /> comun&iacute;quese al <?php echo $telefono;?> o al (0351)15 245 5770</h5>
+<h1>CONSULTA</h1><h5>Ante cualquier inquietud, complete el formulario de consulta, o<br /> comun&iacute;quese al <?php echo $telefono;?> o al (0351)15 245 5770</h5>
 
 </div>
 </div>
@@ -342,7 +296,7 @@ $(function() {
 	lapedreraboutique@gmail.com</span>
   </div>
   <div class="large-2 columns fbordo tcvh padre">
-    <span class="hijo"><a href=""https://www.facebook.com/" class="tblanco"><i class="fa fa-facebook fa-3x"></i></a></span>
+    <span class="hijo"><img src="img/redes.jpg"></span>
   </div>
 </div>
 <div class="row frojo" >
@@ -358,16 +312,14 @@ $(function() {
 </div>
 </div>
 </div>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js">
-</script>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="<?php echo $rutaFoundation;?>js/foundation.min.js"></script>
+
+
 <script>
       $(document).foundation();
 </script>
-
-
-
-
 <script src="main.js"></script>
 
 </body>

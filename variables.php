@@ -1,13 +1,20 @@
 ﻿<?php
-$hotel[1]='La Pedrera Boutique';
-$logo[1]='logo.jpg';
-$color1[1]='amarillo';
-$color2[1]='rojo';
-$color3[1]='trojo';
-$color4[1]='enviar1';
-$color5[1]='tblanco';
-$color6[1]='blanco';
-$fondo[1]='"img/0014.jpg"';
+$hotel='La Pedrera Boutique';
+$logo='img/logoConFondo-01.png';
+$icono='img/ico.jpg';
+$fondo='img/0014.jpg';
+//colores
+$blancof='fblanco';
+$blancot='tblanco';
+$beigef='fbeige';
+$beiget='tbeige';
+$amarillof='famarillo';
+$amarillot='tamarillo';
+$bordof='fbordo';
+$bordot='tbordo';
+$azulf='fazul';
+$azult='tazul';
+
 //VARIABLES DE LA GALERIA DE IMAGENES
 //directorios de fotos
 
@@ -57,26 +64,29 @@ $lugar[8]="GUATEMALA";
 $foto[8]=array("8042.jpg","8043.jpg","8044.jpg","8046.jpg","8047.jpg");
 $text[8]=array("8042.jpg","8043.jpg","8044.jpg","8046.jpg","8047.jpg");
 
-$mapa[1]='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13620.729376843401!2d-64.48082238435741!3d-31.409101827985314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf5cca22fb938bbcb!2sLa+Pedrera+posada!5e0!3m2!1ses-419!2sar!4v1502062266640';
-$direccion[1]='Laprida esquina Tokio';
-$coordenadax[1]='-31.4154127';
-$coordenaday[1]='-64.5094572';
-$telefono[1]='(03541) 42 9453';
-$serv[1] = array(
-	'general' => array(
-		array('Desayuno','fa-coffee'),
-		array('Cena','fa-cutlery'),
-		array('WiFi en todo el Hotel','fa-wifi'),
-		array('Piscina','fa-life-saver'),
-		array('Cochera','fa-automobile')
-	),
-	'habitaciones' => array(
-		array('Television por cable','fa-desktop'),
-		array('Baño privado','fa-tag'),
-		array('Ventilador de Techo','fa-remove fa-spin'),
-		array('Calefactor','fa-fire')
-	)
-);
+$mapa='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13620.729376843401!2d-64.48082238435741!3d-31.409101827985314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf5cca22fb938bbcb!2sLa+Pedrera+posada!5e0!3m2!1ses-419!2sar!4v1502062266640';
+$direccion='Laprida esquina Tokio';
+$coordenadax='-31.4154127';
+$coordenaday='-64.5094572';
+$telefono='(03541) 42 9453';
+$servicios = array(
+		array('Desayuno','Tipo Buffet','fa-coffee'),
+		array('Restaurante','Media pensión','fa-cutlery'),
+		array('WiFi','Gratuito','fa-wifi'),
+		array('Piscina','Al aire libre','fa-life-saver'),
+		array('Parking','Privado','fa-automobile'),
+		array('Television','Por cable','fa-desktop'),
+		array('Hidromasajes','Con Jets','fa-tag'),
+		array('Ventilador de Techo','','fa-remove fa-spin'),
+		array('Calefactor','','fa-fire'),
+		array('Ropa de Cama','y toallas','fa-bed'),
+		array('Bella Vista','al Lago','fa-picture-o'),
+		array('Centro de Fitnes','Aparatos','fa-bicycle'),
+		array('Mascotas','Pequeñas','fa-paw'),
+		array('Minibar','','fa-glass'),
+		array('Asador','con carbón y leña','fa-fire'),
+
+	);
 /*$serv[1]=array(	array('Desayuno','fa-coffee'),
 				array('Cena','fa-cutlery'),
 				array('WiFi en todo el Hotel','fa-wifi'),
@@ -94,8 +104,7 @@ $color3[2]='tamarillo';
 $color4[2]='enviar2';
 $color5[2]='tnegro';
 
-$hotel[3]='Hotel Refugio de Luna';
-$logo[3]='logoRefugioDeLuna.png';
+
 $color1[3]='rojo';
 $color2[3]='blanco';
 $color3[3]='tblanco';

@@ -1,5 +1,6 @@
 tbody tr:nth-child(even) {background-color: transparent !important;}
 
+body {font-family: serif !important;}
 /**/
 .negro {background-color: #292222; color: #fff; border: none !important;}
 .amarillo{background-color: #E7CE98; color: #000; border: none !important;}
@@ -9,6 +10,19 @@ tbody tr:nth-child(even) {background-color: transparent !important;}
 .tblanco{color: #fff;}
 .tnegro{color: #000; z-index:10;}
 .trojo{color: #8B172A;}
+
+.fblanco {background-color: #fff;}
+.tblanco {color: #fff;font-family: serif !important;}
+.fbeige {background-color: #E7CE98;}
+.tbeige {color: #E7CE98; font-family: serif !important;}
+.famarillo {background-color: #CEA32B;}
+.tamarillo {color: #CEA32B; font-family: serif !important;}
+.fbordo {background-color: #8C182B;}
+.tbordo {color: #8C182B; font-family: serif !important;}
+.fazul {background-color: #173849;}
+.tazul {color: #173849; font-family: serif !important;}
+
+
 
 .margensup {height:50px;}
 #correo .button {
@@ -61,15 +75,25 @@ header{
 }
 
 .vcentrar{
-	margin-top:calc(40vh - 140px);
+	//margin-top:0px;
+	//vertical-align: baseline;
 	text-align: center;
 }
 .button{
 	background: #fff !important;/**/
 	color: #000;
 }
-.menu a{color:#000;
-background: #fff !important;
+.menu {
+	z-index:9000 !important;
+}
+.menu a{
+	color:#000;
+	background-color: #fff !important;
+}
+.menu a:hover{
+	color:#000;
+	background-color: #f3f3f3 !important;
+	color: #CEA32B;
 }
 .button:hover{
 	color: #f7c713 !important;
@@ -139,7 +163,7 @@ form > .enviar1:hover{
 nav{
 	position: fixed;
 	width: 100vw;
-	z-index: 1000;
+	z-index: 500;
 	box-shadow:0px 4px 3px rgba(0,0,0,.5);
 }
 
@@ -159,7 +183,7 @@ nav{
 }
 .logoLP {
 	
-	margin-top: -60px;
+	//margin-top: -60px;
 }
 .thumbnail {
 	box-shadow: 4px 4px 5px 2px rgba(10, 10, 10, 0.62) !important;
@@ -186,7 +210,7 @@ nav{
 
 .foto {
 		box-shadow: 4px 4px 5px 2px rgba(10, 10, 10, 0.62) !important;
-		border: 4px solid #fefefe;
+		/*border: 4px solid #fefefe;*/
 }
 .foto-2{
 	font-family:Arial;
@@ -223,3 +247,4 @@ nav{
 	text-align: center;
 	
 }
+
