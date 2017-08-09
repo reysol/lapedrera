@@ -37,8 +37,8 @@ $foto[1]=array("1029.jpg","1030.jpg","1031.jpg","1032.jpg","1033.jpg","1034.jpg"
 $text[1]=array("1029.jpg","1030.jpg","1031.jpg","1032.jpg","1033.jpg","1034.jpg");
 //PARIS
 $lugar[2]="PARIS";
-$foto[2]=array("2048.jpg","2049.jpg","2050.jpg","2051.jpg","2052.jpg","2053.jpg","2055.jpg","2057.jpg");
-$text[2]=array("2048.jpg","2049.jpg","2050.jpg","2051.jpg","2052.jpg","2053.jpg","2055.jpg","2057.jpg");
+$foto[2]=array("2048.jpg","2049.jpg","2050.jpg","2051.jpg","2052.jpg","2053-1.jpg","2055.jpg","2057.jpg");
+$text[2]=array("2048.jpg","2049.jpg","2050.jpg","2051.jpg","2052.jpg","2053-1.jpg","2055.jpg","2057.jpg");
 //TOKIO
 $lugar[3]="TOKIO";
 $foto[3]=array("3082.jpg","3083.jpg","3084.jpg","3086.jpg","3087.jpg");
